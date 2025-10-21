@@ -1,0 +1,485 @@
+  
+  /* =================== FAIRY MUSIC PLAYER =================== */
+/* ===== WINDOWS 98 STYLE ===== */
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://files.catbox.moe/1za99g.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://files.catbox.moe/z7csle.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+#fairy-music-player {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    z-index: 999;
+}
+
+.window {
+  width: 260px;
+  box-shadow: inset -1px -1px #0a0a0a,
+              inset 1px 1px #dfdfdf, 
+              inset -2px -2px #808080,
+              inset 2px 2px #ffffff;
+  background: #c0c0c0;
+}
+
+.title-bar {
+  padding: 3px 3px 3px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, purple, orchid, white);
+}
+
+.title-bar-text {
+  font-weight: bold;
+  color: white;
+}
+
+.title-bar-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.title-bar-controls button {
+  width: 16px;
+  height: 14px;
+  background: silver;
+  border: none;
+  box-shadow: inset -1px -1px #0a0a0a,
+              inset 1px 1px #fff,
+              inset -2px -2px grey,
+              inset 2px 2px #dfdfdf;
+  cursor: pointer;
+}
+
+.title-bar-controls button[aria-label=Minimize] {
+  background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/minimize.svg");
+  background-position: bottom 3px left 4px;
+  background-repeat: no-repeat;
+}
+
+.title-bar-controls button[aria-label=Maximize] {
+  background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/maximize.svg");
+  background-position: top 2px left 3px;
+  background-repeat: no-repeat;
+}
+
+.title-bar-controls button[aria-label=Close] {
+  background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/close.svg");
+  background-position: top 3px left 4px;
+  background-repeat: no-repeat;
+}
+
+.window-body {
+  padding: 5px;
+  background: #c0c0c0;
+}
+
+.song-info {
+  background-color:#b37bb3;
+  box-shadow: inset -1px -1px #fff,
+              inset 1px 1px grey,
+              inset -2px -2px #dfdfdf,
+              inset 2px 2px #0a0a0a;
+  padding: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.controls button {
+  background: #c0c0c0;
+  border: 2px solid silver;
+  box-shadow: inset -1px -1px #0a0a0a,
+              inset 1px 1px #fff,
+              inset -2px -2px grey,
+              inset 2px 2px #dfdfdf;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.controls button:hover {
+  box-shadow: inset -1px -1px #fff,
+              inset 1px 1px #0a0a0a,
+              inset -2px -2px #dfdfdf,
+              inset 2px 2px grey;
+}
+
+.controlimg {
+  width: 20px;
+  height: 20px;
+}
+  
+  
+/* ========================= PRISTINA & HELVETICA LAYOUT ========================= */
+:root {
+  --leaf-green: #2f7b2d;
+  --leaf-2: #1f5a1e;
+  --panel-bg: #0f2230;
+  --panel-inner: #102534;
+  --accent: #ffd0d6;
+  --glass: rgba(255, 255, 255, 0.06);
+  --card: #eaf8ea;
+  --rounded: 26px;
+}
+
+/* Pristina for headers */
+@font-face {
+  font-family: "Pristina";
+  src: url("https://meadowie.neocities.org/fonts/PRISTINA.TTF") format("truetype");
+  font-display: swap;
+}
+
+/* Helvetica Rounded Bold for all other text */
+@font-face {
+  font-family: "HelveticaRounded";
+  src: url("https://meadowie.neocities.org/fonts/Helvetica%20Rounded%20Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+/* ========================= BASE / TYPOGRAPHY ========================= */
+body,
+p,
+span,
+div.info-card,
+.nav-item,
+.character-section {
+  font-family: "HelveticaRounded", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Box sizing helper */
+* {
+  box-sizing: border-box;
+}
+
+/* Body & HTML setup */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url('https://i.imgur.com/nKf4Esa.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Headers only use Pristina */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pristina", cursive;
+  color: #b37bb3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 2.5em; }
+
+/* Paragraphs */
+p {
+  max-width: 600px;
+  margin: 1em auto;
+  line-height: 1.5;
+  color: #dfeef6;
+}
+
+/* ========================= LAYOUT ========================= */
+.page {
+  max-width: 1200px;
+  margin: 26px auto;
+  padding: 18px;
+}
+
+.frame {
+  background: linear-gradient(180deg, #1b391f 0%, #2d6a2f 60%);
+  border-radius: 46px;
+  padding: 14px;
+  box-shadow: 0 18px 50px rgba(10, 20, 10, 0.45);
+  position: relative;
+  overflow: visible;
+}
+
+.inner {
+  border-radius: 32px;
+  background: linear-gradient(180deg, #0e1f29 0%, var(--panel-inner) 100%);
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  position: relative;
+  min-height: 420px;
+  box-shadow: inset 0 6px 18px rgba(0, 0, 0, 0.35);
+  overflow: visible;
+  flex-wrap: nowrap;
+}
+
+/* ========================= LEFT SIDEBAR ========================= */
+.left-col {
+  width: 220px;
+  background: linear-gradient(180deg, #2f7b2d, #1f5a1e);
+  border-radius: 18px;
+  padding: 14px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(10, 20, 10, 0.25);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.logo-mini {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.logo-mini .title {
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.nav-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #e9f7ea;
+  box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform .15s;
+}
+
+.nav-item:hover { transform: translateX(6px); }
+
+/* ========================= STAGE / HERO ========================= */
+.stage-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  position: relative;
+  min-width: 0;
+}
+
+.stage-frame {
+  width: 100%;
+  border-radius: 18px;
+  background: radial-gradient(1000px 300px at 50% 20%, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.15) 40%), linear-gradient(180deg, #0b1620 0%, #102733 100%);
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  border: 6px solid rgba(255, 255, 255, 0.02);
+}
+
+.stage-inner {
+  background: linear-gradient(180deg, rgba(10, 20, 28, 0.55), rgba(6, 12, 18, 0.55));
+  border-radius: 12px;
+  padding: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ========================= HERO ART BOX ========================= */
+.hero-art {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  min-height: 220px;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, #27424a 0%, #12303a 100%);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 -30px 80px rgba(0, 0, 0, 0.3);
+  border: 6px solid rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px 16px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Characters */
+.character {
+  position: absolute;
+  bottom: 28px;
+  width: 86px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Override for hero-art flex row */
+.hero-art .character {
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  margin: 0;
+}
+
+/* Character row container */
+.hero-art .char-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 36px;
+  margin-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Optional character helpers */
+.hero-art .character.tall {
+  height: 140px;
+  width: 100px;
+}
+
+.hero-art .character.low {
+  transform: translateY(8px);
+}
+
+/* ========================= CHARACTER SECTION & RIGHT COLUMN ========================= */
+.character-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  color: #e8f7ef;
+  width: 100%;
+  max-width: 760px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  margin-top: 10px;
+}
+
+.character-section img {
+  max-width: 160px;
+  border-radius: 10px;
+  margin: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.right-col {
+  display: block;
+  width: 240px;
+  margin-bottom: 12px;
+}
+
+.info-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  padding: 12px;
+  border-radius: 12px;
+  color: #dfeef6;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* Vine corner decorative element */
+.vine-corner {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 84px;
+  height: 84px;
+  opacity: 0.9;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.04), transparent 20%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.arrival-img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.arrival-img:hover {
+  transform: scale(5);
+  z-index: 10;
+  position: relative;
+}        
+
+.bottom-vine {
+  position: absolute;
+  bottom: 0px;
+  left: 40px; /* pulls it slightly closer to the corner */
+  width: auto;
+  height: auto;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.side-vine {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  transform-origin: bottom left;
+  transform: rotate(90deg) scaleX(-1); /* flips vertically */
+  z-index: 21;
+  pointer-events: none;
+}

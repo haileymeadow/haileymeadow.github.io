@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="https://i.imgur.com/UPbZstJ.png" /> 
+    
+    <title>Meadow's Garden</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+body {
+    background-image: url("https://i.imgur.com/JOOnvwN.jpg");
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+        h1 {
+            font-family: 'UnifrakturCook', serif;
+            font-size: 80px;
+            background-color: #ff6f84; /* Softer pink color */
+            background-clip: text;
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+            text-align: center;
+            text-shadow: 
+                1px 1px 0px #ffeef8, /* Light pink shadow */
+                2px 2px 0px #ff3366, /* Darker pink shadow for depth */
+                3px 3px 5px rgba(0, 0, 0, 0.4); /* Strong drop shadow for visibility */
+            padding: 20px;
+            display: inline-block;
+        }
+
+h2 {
+  font-family: 'UnifrakturCook', serif;
+  font-size: 40px; /* Font size */
+  background-color: #cc3366; /* Background color */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
+  text-shadow: 
+    -2px 2px 0px #fff; /* Bottom-left white border */
+  display: inline-block;
+  padding: 10px 0; /* Add some vertical padding */
+  margin: 0; /* Remove default margin */
+  line-height: 1.2; /* Adjust line height for better visibility */
+}
+
+h3 {
+  font-family: 'UnifrakturCook', serif;
+  font-size: 25px;
+  font-weight: 700;
+   background-color: #cc3366;
+        background-clip: text;
+        -webkit-background-clip: text; /* For Safari */
+        color: transparent;
+        text-shadow: 
+          -2px 2px 0px #fff;  /* Bottom-left white border */
+        text-align: left;
+        padding: 5px;
+        display: inline-block;
+}
+
+h4, h5, h6 {
+  font-family: 'UnifrakturCook', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #a3213f;
+}
+
+#container{
+background-color: #b9375e;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 800px;
+margin: 0 auto;
+border-width: 26px;
+border-style:solid;
+border-image: url("https://foollovers.com/mat/plate/pl034-plate-i08.gif") 55 fill round;
+}
+
+ 
+#box{
+width: 800px;
+background-color: #b9375e;
+border-style:solid;
+border-image: url("https://foollovers.com/mat/plate/pl034-plate-i08.gif") 55 fill round;
+}
+
+#header {
+  position: relative; /* Set position for the header */
+  margin-bottom: 10px;
+  padding: 10px;
+  letter-spacing: 3px; /* Spacing between letters */
+  text-align: center; /* Center the header content */
+}
+
+.header-gif {
+  width: 40px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Aligns the GIFs with the text */
+  margin: 0 5px; /* Space between the GIFs and text */
+}
+
+#header h1{
+margin: 0px;
+}
+ 
+#side{
+float: left;
+width: 145px;
+padding: 0px 0px 5px 10px;
+overflow: hidden;
+}
+ 
+.sidebox{
+border-width: 5px;
+border-style:solid;
+border-image: url("https://foollovers.com/mat/plate/pl034-plate-i08.gif") 55 fill round;margin: 0px 0px 5px 0px;
+}
+ 
+.sidecontent{
+padding: 0px 0px 0px 5px;
+color: #6e5057;
+font-size: 16px;
+letter-spacing: 1px;
+}
+ 
+.sidecontent ul, li{
+margin: 0px;
+list-style-type: none;
+padding-left: 0px;
+}
+ 
+a{
+text-decoration: none;
+color: #ff668a;
+}
+ 
+a:visited{
+color: #ff668a;
+}
+ 
+a:hover{
+text-shadow: 0px 0px 2px #78beff;
+}
+ 
+#scrollcontainer{
+padding: 5px;
+}
+ 
+#scrolly{
+overflow: scroll;
+overflow-x: hidden;
+width: 110px;
+height:110px;
+border: 1px solid #ff668a;
+margin: 0 auto;
+text-align: center;
+}
+ 
+#scrollyheader{
+margin: 0px;
+border-bottom: 1px dotted #ff668a;
+}
+ 
+#main{
+float: right;
+width: 624px;
+overflow: hidden;
+padding: 0px 10px 5px 0px;
+}
+ 
+.mainboxes{
+border-width: 5px;
+border-style:solid;
+border-image: url("https://foollovers.com/mat/plate/pl034-plate-i08.gif") 55 fill round;margin: 0px 0px 5px 0px;
+padding: 0px;
+margin: 0px 0px 5px 0px;
+}
+ 
+.subheader{
+ background-image: url('https://i.imgur.com/XrPwZDN.jpg'); /* Proper syntax for background image */
+  background-position: center; /* Center the image */
+  color: #fff; /* Text color */
+  letter-spacing: 3px; /* Spacing between letters */
+  text-align: center; /* Center the header content */
+}
+ 
+.subheader h3{
+margin: 0px;
+}
+ 
+.mainboxescontent{
+padding: 0px 15px 0px 15px;
+color: #6e5057;
+font-size: 17px;
+}
+ 
+#footer{
+clear: both;
+padding: 3px;
+ background-image: url('https://i.imgur.com/XrPwZDN.jpg'); /* Proper syntax for background image */
+  background-size: cover; /* Ensure the image covers the header */
+  background-position: center; /* Center the image */
+  color: #fff; /* Text color */
+  letter-spacing: 3px; /* Spacing between letters */
+  text-align: center; /* Center the header content */
+}
+ 
+#footer p{
+margin: 0px;
+}
+ 
+::-webkit-scrollbar{
+width: 8px; 
+}
+ 
+::-webkit-scrollbar-track{
+background-color: #fff7fb;
+}
+ 
+::-webkit-scrollbar-thumb{
+background-color: #ff668a;  
+}
+ 
+.about-image {
+    float: left; /* Float the image to the left */
+    width: 210px; /* Set the width to 250 pixels */
+    margin-right: 15px; /* Optional: Add some space to the right of the image */
+}
+
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+ 
+</style>
+ 
+<!--   ・゜ ♡   emoji set code   ♡ ゜ ・  -->
+<script src="https://file.pooftie.me/js/jquery.js"></script>
+<script src="https://middlepot.com/emoji.js"></script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+
+<!--   ・゜ ♡   color set code   ♡ ゜ ・  -->
+<script src="https://middlepot.com/color.js"></script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+
+</head>
+ 
+<body>
+ 
+<div id="container">
+ 
+<div id="box">
+ 
+<div id="header">
+  <h1>
+    <img class="header-gif" src="https://i.imgur.com/X6y2rbt.gif" alt="Left GIF">
+    meadow's garden
+    <img class="header-gif" src="https://i.imgur.com/uncoVTw.gif" alt="Right GIF">
+  </h1>
+</div>
+<div id="side">
+ 
+<div class="sidebox">
+ 
+<div class="subheader"><h3>navigation</h3></div>
+ 
+<div class="sidecontent">
+ 
+<!-- LINK BOX 1 -->
+ 
+<ul>
+<li><a href="https://meadowie.neocities.org/">༊ home</a></li>
+<li><a href="">༊ about me</a></li>
+<li><a href="https://meadowie.neocities.org/shrines/">༊ shrines</a></li>
+<li><a href="">༊ media</a></li>
+<li><a href="">༊ links</a></li>
+</ul>
+ 
+<!-- END LINK BOX 1 -->
+ 
+</div>
+</div>
+ 
+<div class="sidebox">
+ 
+<div class="subheader"><h3>other links</h3></div>
+ 
+<div class="sidecontent">
+ 
+<!-- LINK BOX 2 -->
+ 
+<ul>
+<li><a href="https://listography.com/meadowie">༊ my listography</a></li>
+<li><a href="">༊*·˚ </a></li>
+<li><a href="">༊*·˚ </a></li>
+<li><a href="">༊*·˚ </a></li>
+<li><a href="">༊*·˚ </a></li>
+</ul>
+ 
+<!-- END LINK BOX 2 -->
+
+ 
+ 
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div id="main">
+ 
+  <div class="mainboxes">
+    <div class="subheader"><h2><center>about me</center></h2></div>
+    <div class="mainboxescontent">
+      <img class="about-image" src="https://i.imgur.com/6UXBto5.png" alt="me, in piccrew form" />
+      <p>hi! i'm Hailey, a passionate nature lover and a student of environmental science. my interests span across mycology, ecology, and all things whimsical. i love to explore the intersections of science and art, often expressing this through my various shrines dedicated to my favorite things.</p>
+      <p>here, you'll find a cozy space filled with my creative endeavors and thoughts. join me on my journey as I delve deeper into the wonders of nature and the beauty of the world around us. thank you for stopping by!</p>
+      <center><img src="https://i.imgur.com/g9UUsJd.png"></center>
+    </div>
+  </div>
+ 
+<div class="mainboxes">
+  <div class="subheader">
+    <div id="quiz-answers" style="width: 100%; height: 400px; overflow-y: scroll; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd;">
+  <!-- Quiz Results -->
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://uquiz.com/Result/static/lite/efEGrs/6623095/personality/5162649?p=5180909&s=9211ad91-3e63-4752-99de-c28ebeb7a85c">
+      <img src="https://i.imgur.com/yudMNiu.png" alt="Personality Result" style="width: 180px; height: 180px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
+      <img src="http://www.allaboutfrogs.org/funstuff/frogtest/result10.jpg" alt="I'm a Red Eyed Tree Frog!" style="width: 215px; height: 100px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href='https://rarimena.neocities.org/quizzes.html'>
+      <img src='https://rarimena.neocities.org/imgs/4.png' alt="Rarimena Quiz Result" style="width: 250px; height: 161px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://theotaku.com/quizzes/view/4129/cinderella%3A_choose_your_own_adventure_and_dress">
+      <img src="http://www.theotaku.com/guru_results/4129_blue.jpg" alt="Cinderella: choose your own adventure and dress" style="width: 300px; height: auto; max-height: 200px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://theotaku.com/quizzes/view/2419/what_harvest_moon_girl_are_you%3F">
+      <img src="http://www.theotaku.com/guru_results/2419_Anissa.jpg" alt="What Harvest Moon Girl Are You?" style="width: 300px; height: auto; max-height: 200px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://theotaku.com/quizzes/view/1915/what_sailor_scout_are_you%3F">
+      <img src="http://www.theotaku.com/guru_results/1915_Saturn.jpg" alt="What Sailor Scout Are You?" style="width: 300px; height: auto; max-height: 200px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://andou.gay/quiz/donutquiz">
+      <img src="https://andou.gay/quiz/applefritter.png" alt="Apple Fritter" style="width: 200px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="http://www.dragonflycave.com/quizzes/what-pokemon-are-you">
+      <img src="http://www.dragonflycave.com/wpay/togetic.gif" alt="I am a Togetic!" title="Find out what Pokémon you are at The Cave of Dragonflies" style="width: 200px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top; text-align: center;">
+    <a href="http://www.springhole.net" target="_blank">
+      <img src="http://i213.photobucket.com/albums/cc224/SyeraMiktayee/QuizPics/GhostQuizResults/cheerfulghost.gif" alt="Cheerful Ghost" style="width: 250px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top; text-align: center;">
+    <a href="http://www.springhole.net" target="_blank">
+      <img src="http://i213.photobucket.com/albums/cc224/SyeraMiktayee/QuizPics/MerTailQuizResults/emeraldgreen-light.jpg" alt="Emerald Green MerTail" style="width: 250px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top; text-align: center;">
+    <a href="http://www.springhole.net" target="_blank">
+      <img src="http://i213.photobucket.com/albums/cc224/SyeraMiktayee/QuizPics/whatfairy_flowerfairy.gif" alt="Flower Fairy" style="width: 250px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <img src="https://images.neopets.com/faerieland/light_faerie_icon.gif" alt="Light Faerie Icon" style="width: 50px; height: 50px; object-fit: contain; border: 1px solid #ccc;" />
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://pennylovespandas.neocities.org/quiz/creature">
+      <img src="https://pennylovespandas.neocities.org/quizresults/fairy.png" alt="Fairy" title="You are a sweet little fairy!" style="width: 200px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+
+  <div class="quiz-result" style="display: inline-block; margin: 10px; vertical-align: top;">
+    <a href="https://casiopea.neocities.org/isopod/isopodquiz.html">
+      <img src="https://i.imgur.com/hR4Y9Qc.png" alt="Isopod Quiz Result" style="width: 200px; height: auto; max-height: 150px; object-fit: contain; border: 1px solid #ccc;" />
+    </a>
+  </div>
+</div>
+  
+  <div class="mainboxes">
+    <div class="subheader"><h2><center>blinkies</center></h2></div>
+    <div class="mainboxescontent">
+      <div style="width: 100%; height: 200px; overflow-y: scroll;">
+        
+       <a href="https://notprincehamlet.neocities.org/">
+        <img src="https://i.imgur.com/LrIHKtz.gif" />
+        </a>
+
+        <img src="https://i.imgur.com/pMAmIzK.gif"/>
+        <img src="https://i.imgur.com/I08ZE2e.gif"/>
+        <img src="https://i.imgur.com/KuXLQE3.gif"/>
+        <img src="https://i.imgur.com/xjWsMfF.gif"/>
+        <img src="https://i.imgur.com/4Kr6uAn.gif"/>
+        <img src="https://i.imgur.com/JaI1HT3.gif"/>
+        <img src="https://i.imgur.com/x8xsMON.gif"/>
+        <img src="https://i.imgur.com/FL3Z3fj.gif"/>
+        <img src="https://i.imgur.com/pa8S6U9.gif"/>
+        <img src="https://i.imgur.com/aQvaTaR.gif"/>
+        <img src="https://i.imgur.com/JUgSePb.jpeg"/>
+        <img src="https://i.imgur.com/FEMJ03y.gif"/>
+        <img src="https://i.imgur.com/xnDFaWN.gif"/>
+        <img src="https://i.imgur.com/NvNotCu.gif"/>
+        <img src="https://i.imgur.com/NM3WCCD.gif"/>
+        <img src="https://i.imgur.com/mbz5xRQ.gif"/>
+        <img src="https://i.imgur.com/vwRYeBS.gif"/>
+        <img src="https://i.imgur.com/SJuCkZm.gif"/>
+        <img src="https://i.imgur.com/Qq5I4ej.gif"/>
+        <img src="https://i.imgur.com/3QetBPw.gif"/>
+        <img src="https://i.imgur.com/MMfyYNt.gif"/>
+        <img src="https://i.imgur.com/YDizAc2.gif"/>
+        <img src="https://i.imgur.com/cP3JuRj.gif"/>
+        <img src="https://i.imgur.com/xGub5bx.gif"/>
+        <img src="https://i.imgur.com/xRZXvau.gif"/>
+        <img src="https://i.imgur.com/DvsnGTH.gif"/>
+        <img src="https://i.imgur.com/DK67AgE.gif"/>
+        <img src="https://i.imgur.com/Mm10Pbv.gif"/>
+        <img src="https://i.imgur.com/pCA9mzu.gif"/>
+        <img src="https://i.imgur.com/nNxfljI.gif"/>
+        <img src="https://i.imgur.com/oGnc85c.gif"/>
+        <img src="https://i.imgur.com/phwErxk.gif"/>
+        <img src="https://i.imgur.com/X77kQoa.gif"/>
+        <img src="https://i.imgur.com/PjUVewc.gif"/>
+        <img src="https://i.imgur.com/uGI22Yd.gif"/>
+        <img src="https://i.imgur.com/lJSslsq.gif"/>
+        <img src="https://i.imgur.com/JV7siRa.gif"/>
+        <img src="https://i.imgur.com/sCXX9q4.gif"/>
+    
+      </div>
+    </div>
+  </div>
+<div class="mainboxes">
+    <div class="subheader"><h2><center>stamps</a></center></h2></div>
+    <div class="mainboxescontent">
+      <div style="width: 100%; height: 200px; overflow-y: scroll;">
+    <img src="https://i.imgur.com/1rn0hVe.png">
+    <img src="https://i.imgur.com/FB87tYz.png">
+    <img src="https://i.imgur.com/xU5qKyr.gif">
+    <img src="https://i.imgur.com/TreCiLn.gif">
+    <img src="https://i.imgur.com/UMsMCoy.png">
+    <img src="https://i.imgur.com/05KSJIE.png">
+    <img src="https://i.imgur.com/AHRqiRv.png">
+    <img src="https://i.imgur.com/PrhxubO.png">
+    <img src="https://i.imgur.com/bpVfUFo.png">
+    <img src="https://i.imgur.com/LR3mA2k.png">
+    <img src="https://i.imgur.com/VJKu8kQ.png">
+    <img src="https://i.imgur.com/iEjaSRP.png">
+    <img src="https://i.imgur.com/v9U1N31.png">
+    <img src="https://i.imgur.com/QIIauA8.png">
+    <img src="https://i.imgur.com/wEoRnhU.gif">
+    <img src="https://i.imgur.com/rCjNHVz.png">
+    <img src="https://i.imgur.com/m3H2dcp.png">
+    <img src="https://i.imgur.com/sLpwalv.png">
+    <img src="https://i.imgur.com/2CIfUXz.png">
+    <img src="https://i.imgur.com/0pKUX4d.png">
+    <img src="https://i.imgur.com/eJ3D0i9.gif">
+    <img src="https://i.imgur.com/CB7v1AO.png">
+
+
+        
+</div>
+
+</div>
+
+</div>
+
+</div>
+ 
+<div id="footer"><p>-ˋˏ ༻❁༺ ˎˊ-</p></div>
+ 
+</div>
+ 
+</div>
+ 
+<div id="credit"><a href="https://repth.neocities.org/index.html">@Repth</a></div>
+ 
+
+    <script>
+      // Function to sort results by height
+      function sortResults() {
+        const resultsContainer = document.getElementById('quiz-answers');
+        const results = Array.from(resultsContainer.children);
+
+        // Sort results based on the data-height attribute
+        results.sort((a, b) => {
+          return (b.getAttribute('data-height') || 0) - (a.getAttribute('data-height') || 0);
+        });
+
+        // Clear the container and append sorted results
+        resultsContainer.innerHTML = '';
+        results.forEach(result => resultsContainer.appendChild(result));
+      }
+
+      // Call the sorting function on page load
+      window.onload = sortResults;
+    </script>
+
+<!--   ・゜ ♡   emoji set code   ♡ ゜ ・  -->
+<script>loadEmojis();</script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+
+</body>
+ 
+</html>

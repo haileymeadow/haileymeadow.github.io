@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.imgur.com/UPbZstJ.png"> 
+    
+    <title>my dolls shrine</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dollz.css">
+
+    <style>
+        body {
+            background-color: #ffe6f0;
+            color: #a47c8f;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #ffc1cc;
+            color: #333;
+            font-family: 'UnifrakturCook', sans-serif;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transform: rotate(-2deg);
+            width: 80%;
+            max-width: 400px;
+            margin: 15px auto;
+            position: relative;
+            border: 2px solid #ffb3c1;
+            text-align: center;
+        }
+
+        header:before {
+            content: "";
+            width: 200px;
+            height: 60px;
+            background: url('https://i.imgur.com/D1S1vHn.jpg') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-5deg);
+        }
+
+        a {
+            color: #ff6699;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff3366;
+            text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+            font-family: 'UnifrakturCook', serif;
+            color: #cc3366;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+            color: #996291;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            image-rendering: pixelated;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            font-size: 0.8em;
+            color: #ff99aa;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ffccd5;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ff99aa;
+        }
+
+        footer a:hover {
+            color: #ff6699;
+        }
+
+        .nav-pane {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .pixel {
+            width: 100px;
+            height: auto;
+            margin: 0 15px;
+            transition-duration: 0.5s;
+            transition-property: transform;
+            image-rendering: pixelated;
+        }
+
+        .pixel:hover {
+            transform: scale(1.5);
+        }
+
+        .nav-link {
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 24px;
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="shrine-container">
+        <header>
+            <h1>dolls shrine</h1>
+        </header>
+        
+        <nav class="nav-pane">
+            <a href="https://meadowie.neocities.org/shrines/dolls/barbie/">
+                <img src="https://i.imgur.com/emMWVPG.png" alt="barbie" class="pixel">
+            </a>
+            <a href="https://meadowie.neocities.org/shrines/dolls/bratz/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bratz_2001-2013%2C_2014-present_logo.png" alt="bratz" class="pixel">
+            </a>
+            <a href="https://meadowie.neocities.org/shrines/dolls/mylittlepony/">
+                <img src="https://i.imgur.com/jas8OKe.png" alt="my little pony" class="pixel">
+            </a>
+            <a href="https://meadowie.neocities.org/shrines/dolls/digitaldolls" class="nav-link">digital dolls</a>
+            <a href="https://meadowie.neocities.org/shrines/dolls/miscdolls/" class="nav-link">misc.</a>
+        </nav>
+    </div>
+</body>
+</html>

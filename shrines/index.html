@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>my shrines</title>
+  <link rel="shortcut icon" href="https://i.imgur.com/UPbZstJ.png" /> 
+  
+  
+<style type="text/css">
+  
+@font-face {
+  font-family: 'kiwi';
+  src: url(https://dl.dropbox.com/s/388cvx0do21kj3n/KiwiSoda.ttf);
+}
+
+
+@font-face {
+  font-family: 'nintendo';
+  src: url(https://dl.dropbox.com/s/8w4sembeqyz4rsq/Nintendo-DS-BIOS.ttf);
+}
+
+@font-face {
+  font-family: 'Cartridge';
+  src: url('https://dl.dropboxusercontent.com/scl/fi/rcs2mnedmt8g01qwsu0n0/cartridge.ttf?rlkey=grogdwqz7krbwpvhfp0tttdvd&st=kj5t3gx7') format('truetype');
+  )
+}
+
+.nintendo-font {
+  font-family: 'nintendo';
+  font-size: 15px;
+}
+
+.cartridge-font {
+  font-family: 'Cartridge';
+  font-size: 15px;
+}
+
+
+body {
+  background-color: #F6F0FD;
+  background-repeat: repeat;
+  background-position: top left;
+  text-align: left;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 1px #bbb;
+  font-family: 'nintendo', sans-serif;
+  color: #7F639C;
+  font-size: 16px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #b5838d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b5838d;
+}
+
+i {
+  color: #FFB755;
+  font-weight: normal;
+}
+
+b {
+  color: #CC6D96;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 0px;
+  border: 1px solid #999;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+  background: #eee;
+}
+
+
+#layout {
+  margin: 80px auto;
+  width: 600px;
+}
+
+#header1 {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+}
+
+#header2 {
+  height: 135px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0px;
+}
+
+#navigation1 {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+}
+
+#navigation2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 20px;
+  background: #FEE3FD;
+  margin: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 2px solid #FBFEEA;
+}
+
+#navigation2 a {
+  background: transparent;
+  font: 18px 'Cartridge', monospace;
+  line-height: 20px;
+  padding: 4px 8px;
+  letter-spacing: 3px;
+  margin-right: 6px;
+  color: #9D6AA6;
+}
+
+#navigation2 a:hover {
+  background: transparent;
+  font: 20px 'Cartridge', monospace;
+  line-height: 20px;
+  padding: 4px 8px;
+  letter-spacing: 3px;
+  margin-right: 6px;
+  color: #b5838d;
+}
+
+
+#content1 {
+  width: 280px;
+  float: left;
+  margin: 0 auto;
+}
+
+#content2 {
+  height: 300px;
+  min-height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+  background: #FFFFFF;
+  border-top: 1px solid #9D6AA6;
+  margin: 0px;
+  padding: 4px;
+}
+
+#left1 {
+  width: 160px;
+  float: left;
+  margin: 0 auto;
+}
+
+#left2 {
+  height: 300px;
+  min-height: 300px;
+  background: #fff;
+  border-top: 1px solid #9D6AA6;
+  border-right: 1px solid #ddd;
+  margin: 0px;
+  padding: 4px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#right1 {
+  width: 160px;
+  float: left;
+  margin: 0 auto;
+}
+
+#right2 {
+  height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+  border-top: 1px solid #9D6AA6;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  margin: 0px;
+  padding: 4px;
+}
+
+#footer1 {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+  clear: both;
+}
+
+#footer2 {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #FEE3FD;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0px;
+  border-top: 1px solid #bbb;
+}
+
+
+.title {
+  background: transparent;
+  text-transform: uppercase;
+  font: bold 12px 'nintendo', monospace;
+  color: #666;
+  line-height: 10px;
+  padding: 1px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+}
+
+
+.bigtitle {
+  font-family: "kiwi", arial;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #CC6D96;
+  text-shadow: 0px 0px 4px #FEE3FD;
+}
+
+
+.box {
+  background: #fff;
+  border-left: 2px solid #E7DCED;
+  border-right: 2px solid #F3EDF6;
+  border-bottom: 2px solid #F3EDF6;
+  border-top: 2px solid #E7DCED;
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+
+.menu {
+  display: block;
+  background: #fff;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border-left: 0px solid #F6D0D4;
+  letter-spacing: 1px;
+  font: bold 12px 'nintendo', monospace;
+  color: #333;
+}
+
+
+.menu:hover {
+  display: block;
+  background: #f5f5f5;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border-left: 0px solid #D18E8C;
+  letter-spacing: 1px;
+  font: bold 13px 'nintendo', monospace;
+  color: #666;
+}
+
+</style>
+  
+</head>
+  
+  
+  
+  
+<body>
+  
+  
+    <div id="layout">
+      
+        <div id="header1">
+        <div id="header2">
+          <center> <a href=""><img src="https://i.imgur.com/uyyJeAp.gif" border="0"></a></center>
+        </div>
+        </div>
+      
+      
+      
+      
+        <div id="navigation1">
+        <div id="navigation2">
+                     <a href="">home</a> <a href="https://meadowie.neocities.org/shrines/dolls/dolls">dolls</a> <a href="">tv</a> <a href="">games</a> <a href="">movies</a> <a href="">science</a>
+        </div>
+        </div>
+      
+      
+      
+      
+        <div id="left1">
+        <div id="left2">
+          
+        <div class="box">
+          
+ <div class="title"> deerfact.exe 
+ <img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>
+          
+<img src="https://i.imgur.com/T4flTlk.png" height="75" alt="pumpkin cat" align="left" style="margin:2px;"> 
+<b>boop!</b> my love for deer first started after playing one of my all time favorite games, <i> Life is Strange. </i>  living within the Appalachian mountains, i have been able to appreciate and love these cuties from afar, along with working with them at my local wildlife rescue. </div>
+
+          
+          <div class="box">
+            
+<div class="title"> about.dolls 
+<img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>
+under my dolls shrine you will find different categories that pertain to different lines of fashion or playline dolls. under digital dolls, you will find different dollz from the early 2000's to present day. if the artist is known, they will be credited and if they are available on the web today i will link them!  </div>
+          
+
+          
+        </div>
+        </div>
+      
+      
+      
+      
+        <div id="content1">
+        <div id="content2">
+          
+           <div class="box">
+            <div class="bigtitle">my shrines</div>
+            
+          </div>
+         
+<div class="box">
+    
+<div class="title"> intro.html <img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>
+<b>welcome</b> to my shrines page! this is where I have gathered all my little treasures and favorite things, carefully sorted into the categories above. each shrine holds a collection of special items, memories, and tidbits that celebrate what I love most. unlike my media page - which is where I log everything I am currently watching, reading, or listening to - this page is for my all-time favorites! here, I keep a curated collection of media, images, and little trinkets that mean the most to me.
+</div>
+          
+    <div class="box">
+    
+<div class="title"> about.tv <img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>
+in the TV category, find a cozy collection of my favorite shows, along with some nostalgic and retro series that hold a special place in my heart! from classic sitcoms to timeless dramas, each one brings back memories and endless comfort.          
+          
+          </div>
+          
+          
+        </div>
+        </div>
+      
+      
+  
+  
+  
+        <div id="right1">
+        <div id="right2">
+          <div class="box">               
+                   
+<div class="title">
+ updated pages 
+  
+<img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>  
+            
+          <a href="https://meadowie.neocities.org/shrines/games/pixiehollow/" class="menu"><img src="https://i.imgur.com/4zTNKZU.gif" height="15" alt="x"> pixie hollow</a>
+            
+          <a href="https://meadowie.neocities.org/shrines/games/dragon%20age/dao" class="menu"><img src="https://i.imgur.com/4zTNKZU.gif" height="15" alt="x">  dragon age</a>
+            
+          <a href="https://meadowie.neocities.org/shrines/science/links" class="menu"><img src="https://i.imgur.com/4zTNKZU.gif" height="15" alt="x">  science </a>
+            
+          <a href="https://meadowie.neocities.org/shrines/dolls/digitaldolls" class="menu"><img src="https://i.imgur.com/4zTNKZU.gif" height="15" alt="x">  digital dolls</a>
+         
+          </div>
+          
+          
+           <div class="box">               
+<div class="title"> about.games 
+<img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>  
+in the games category, discover my little sanctuary of cozy games and RPGs that I absolutely adore! from relaxing farm simulators to epic quests filled with magic and adventure, each game is like a warm escape into another world. these games are my comfort zone, where I can unwind, explore, and enjoy beautiful stories. </div>
+          
+             <div class="box">               
+<div class="title"> about.movies 
+<img src="https://64.media.tumblr.com/80cf177e094cd9fc9a27eec8da61e920/e06f2c466dd19ade-e9/s75x75_c1/ab3391fa58ceabfb624ecc9b0b84091592b14c6c.pnj" align="right" height="8"></div>  
+in the movies category, browse a handpicked collection of films that I hold close to my heart. from magical adventures to feel-good classics, these movies are my ultimate comfort watches.
+          </div>
+          
+          
+          
+        </div>
+        </div>
+      
+      
+  
+  
+  
+        <div id="footer1">
+        <div id="footer2">
+          
+          
+<b>layout: </b> 
+          <a href="http://itinerae.blogspot.com" target="_blank">Itinerae</a>  
+
+        </div>
+        </div>
+      
+     
+      
+      
+      
+     
+    </div>
+  
+  
+  
+</body>
+</html>
+      
+    
